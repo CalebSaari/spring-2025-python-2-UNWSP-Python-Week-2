@@ -1,0 +1,18 @@
+def calculate_average_age(ages):
+    """Calculates the average age from a list of ages."""
+
+    if not ages:
+        return 0  # Avoid division by zero if the list is empty
+
+    total_age = sum(ages)
+    average_age = total_age / len(ages)
+    return average_age
+
+ages = [17, 18, 19, 20, 22]
+average = calculate_average_age(ages)
+
+print("Average age:", average)
+
+
+
+Average age: 19.2
